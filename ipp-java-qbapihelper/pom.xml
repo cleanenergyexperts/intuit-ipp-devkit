@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.intuit.code.devkit</groupId>
+   <artifactId>ipp-java-qbapihelper</artifactId>
+   <packaging>jar</packaging>
+   <version>1.2.0</version>
+   <name>ipp-java-qbapihelper</name>
+
+   <distributionManagement>
+      <repository>
+         <id>aws-release</id>
+         <name>AWS Release Repository</name>
+         <url>s3://maven.leadoperations.co/release</url>
+      </repository>
+      <snapshotRepository>
+         <id>aws-snapshot</id>
+         <name>AWS Snapshot Repository</name>
+         <url>s3://maven.leadoperations.co/snapshot</url>
+      </snapshotRepository>
+   </distributionManagement>
+ 
+   <build>
+      <extensions>
+         <extension>
+            <groupId>org.springframework.build</groupId>
+            <artifactId>aws-maven</artifactId>
+            <version>5.0.0.RELEASE</version>
+         </extension>
+      </extensions>
+   </build>
+ 
+</project>
